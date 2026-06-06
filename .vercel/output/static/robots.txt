@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://maurice-original-navy-2ak.pages.dev/sitemap.xml

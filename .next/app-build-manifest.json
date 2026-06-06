@@ -1,0 +1,175 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-69a5f269c00b3a99.js",
+      "static/chunks/fd9d1056-450696502a099a01.js",
+      "static/chunks/117-0d5d7fde5d293658.js",
+      "static/chunks/main-app-5adf898317a275bd.js",
+      "static/chunks/app/_not-found/page-ded1718ec155b919.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-69a5f269c00b3a99.js",
+      "static/chunks/fd9d1056-450696502a099a01.js",
+      "static/chunks/117-0d5d7fde5d293658.js",
+      "static/chunks/main-app-5adf898317a275bd.js",
+      "static/css/83d75c0440af8eb5.css",
+      "static/css/6fc4af9eb9f651b2.css",
+      "static/chunks/app/layout-30be0674b53dc8d4.js"
+    ],
+    "/complaints-policy/page": [
+      "static/chunks/webpack-69a5f269c00b3a99.js",
+      "static/chunks/fd9d1056-450696502a099a01.js",
+      "static/chunks/117-0d5d7fde5d293658.js",
+      "static/chunks/main-app-5adf898317a275bd.js",
+      "static/chunks/502-b485368825e76a85.js",
+      "static/chunks/49-1fe6461f47cd4fd4.js",
+      "static/chunks/app/complaints-policy/page-1cb2762c093c5475.js"
+    ],
+    "/aboutUs/page": [
+      "static/chunks/webpack-69a5f269c00b3a99.js",
+      "static/chunks/fd9d1056-450696502a099a01.js",
+      "static/chunks/117-0d5d7fde5d293658.js",
+      "static/chunks/main-app-5adf898317a275bd.js",
+      "static/css/d604c9c9bdd4a1ff.css",
+      "static/chunks/502-b485368825e76a85.js",
+      "static/chunks/629-a5247789cdb16fee.js",
+      "static/chunks/49-1fe6461f47cd4fd4.js",
+      "static/chunks/app/aboutUs/page-66e73336d28d0ca8.js"
+    ],
+    "/career/page": [
+      "static/chunks/webpack-69a5f269c00b3a99.js",
+      "static/chunks/fd9d1056-450696502a099a01.js",
+      "static/chunks/117-0d5d7fde5d293658.js",
+      "static/chunks/main-app-5adf898317a275bd.js",
+      "static/chunks/502-b485368825e76a85.js",
+      "static/chunks/49-1fe6461f47cd4fd4.js",
+      "static/chunks/app/career/page-5e71c03185058b9b.js"
+    ],
+    "/cookie/page": [
+      "static/chunks/webpack-69a5f269c00b3a99.js",
+      "static/chunks/fd9d1056-450696502a099a01.js",
+      "static/chunks/117-0d5d7fde5d293658.js",
+      "static/chunks/main-app-5adf898317a275bd.js",
+      "static/chunks/502-b485368825e76a85.js",
+      "static/chunks/49-1fe6461f47cd4fd4.js",
+      "static/chunks/app/cookie/page-59ade9c8237f80b8.js"
+    ],
+    "/contactUs/page": [
+      "static/chunks/webpack-69a5f269c00b3a99.js",
+      "static/chunks/fd9d1056-450696502a099a01.js",
+      "static/chunks/117-0d5d7fde5d293658.js",
+      "static/chunks/main-app-5adf898317a275bd.js",
+      "static/css/d604c9c9bdd4a1ff.css",
+      "static/chunks/502-b485368825e76a85.js",
+      "static/chunks/629-a5247789cdb16fee.js",
+      "static/chunks/49-1fe6461f47cd4fd4.js",
+      "static/chunks/app/contactUs/page-95223c3702dad0f8.js"
+    ],
+    "/criminal-defence-drugs/page": [
+      "static/chunks/webpack-69a5f269c00b3a99.js",
+      "static/chunks/fd9d1056-450696502a099a01.js",
+      "static/chunks/117-0d5d7fde5d293658.js",
+      "static/chunks/main-app-5adf898317a275bd.js",
+      "static/css/d604c9c9bdd4a1ff.css",
+      "static/chunks/502-b485368825e76a85.js",
+      "static/chunks/629-a5247789cdb16fee.js",
+      "static/chunks/49-1fe6461f47cd4fd4.js",
+      "static/chunks/app/criminal-defence-drugs/page-726f19463ec28e4f.js"
+    ],
+    "/criminal-defence-murder/page": [
+      "static/chunks/webpack-69a5f269c00b3a99.js",
+      "static/chunks/fd9d1056-450696502a099a01.js",
+      "static/chunks/117-0d5d7fde5d293658.js",
+      "static/chunks/main-app-5adf898317a275bd.js",
+      "static/css/d604c9c9bdd4a1ff.css",
+      "static/chunks/502-b485368825e76a85.js",
+      "static/chunks/629-a5247789cdb16fee.js",
+      "static/chunks/49-1fe6461f47cd4fd4.js",
+      "static/chunks/app/criminal-defence-murder/page-3ebba2c00ea4222c.js"
+    ],
+    "/criminal-defence-financial-crimes/page": [
+      "static/chunks/webpack-69a5f269c00b3a99.js",
+      "static/chunks/fd9d1056-450696502a099a01.js",
+      "static/chunks/117-0d5d7fde5d293658.js",
+      "static/chunks/main-app-5adf898317a275bd.js",
+      "static/css/d604c9c9bdd4a1ff.css",
+      "static/chunks/502-b485368825e76a85.js",
+      "static/chunks/629-a5247789cdb16fee.js",
+      "static/chunks/49-1fe6461f47cd4fd4.js",
+      "static/chunks/app/criminal-defence-financial-crimes/page-59917772b7dfe554.js"
+    ],
+    "/criminal-defence-national-security-crimes/page": [
+      "static/chunks/webpack-69a5f269c00b3a99.js",
+      "static/chunks/fd9d1056-450696502a099a01.js",
+      "static/chunks/117-0d5d7fde5d293658.js",
+      "static/chunks/main-app-5adf898317a275bd.js",
+      "static/css/d604c9c9bdd4a1ff.css",
+      "static/chunks/502-b485368825e76a85.js",
+      "static/chunks/629-a5247789cdb16fee.js",
+      "static/chunks/49-1fe6461f47cd4fd4.js",
+      "static/chunks/app/criminal-defence-national-security-crimes/page-698189a73728d6bc.js"
+    ],
+    "/criminal-defence-traffic-offences/page": [
+      "static/chunks/webpack-69a5f269c00b3a99.js",
+      "static/chunks/fd9d1056-450696502a099a01.js",
+      "static/chunks/117-0d5d7fde5d293658.js",
+      "static/chunks/main-app-5adf898317a275bd.js",
+      "static/css/d604c9c9bdd4a1ff.css",
+      "static/chunks/502-b485368825e76a85.js",
+      "static/chunks/629-a5247789cdb16fee.js",
+      "static/chunks/49-1fe6461f47cd4fd4.js",
+      "static/chunks/app/criminal-defence-traffic-offences/page-a8cc78c6db093914.js"
+    ],
+    "/ourTeam/page": [
+      "static/chunks/webpack-69a5f269c00b3a99.js",
+      "static/chunks/fd9d1056-450696502a099a01.js",
+      "static/chunks/117-0d5d7fde5d293658.js",
+      "static/chunks/main-app-5adf898317a275bd.js",
+      "static/chunks/502-b485368825e76a85.js",
+      "static/chunks/49-1fe6461f47cd4fd4.js",
+      "static/chunks/app/ourTeam/page-24f1ba2316f8e931.js"
+    ],
+    "/criminal-defence-sex-human-rights-crimes/page": [
+      "static/chunks/webpack-69a5f269c00b3a99.js",
+      "static/chunks/fd9d1056-450696502a099a01.js",
+      "static/chunks/117-0d5d7fde5d293658.js",
+      "static/chunks/main-app-5adf898317a275bd.js",
+      "static/css/d604c9c9bdd4a1ff.css",
+      "static/chunks/502-b485368825e76a85.js",
+      "static/chunks/629-a5247789cdb16fee.js",
+      "static/chunks/49-1fe6461f47cd4fd4.js",
+      "static/chunks/app/criminal-defence-sex-human-rights-crimes/page-826239077a35350f.js"
+    ],
+    "/criminal-defence-violent-crimes/page": [
+      "static/chunks/webpack-69a5f269c00b3a99.js",
+      "static/chunks/fd9d1056-450696502a099a01.js",
+      "static/chunks/117-0d5d7fde5d293658.js",
+      "static/chunks/main-app-5adf898317a275bd.js",
+      "static/css/d604c9c9bdd4a1ff.css",
+      "static/chunks/502-b485368825e76a85.js",
+      "static/chunks/629-a5247789cdb16fee.js",
+      "static/chunks/49-1fe6461f47cd4fd4.js",
+      "static/chunks/app/criminal-defence-violent-crimes/page-4f96ba1bdf140ee1.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-69a5f269c00b3a99.js",
+      "static/chunks/fd9d1056-450696502a099a01.js",
+      "static/chunks/117-0d5d7fde5d293658.js",
+      "static/chunks/main-app-5adf898317a275bd.js",
+      "static/css/d604c9c9bdd4a1ff.css",
+      "static/chunks/502-b485368825e76a85.js",
+      "static/chunks/629-a5247789cdb16fee.js",
+      "static/chunks/49-1fe6461f47cd4fd4.js",
+      "static/chunks/app/page-e078791350a136a4.js"
+    ],
+    "/privacy-policy/page": [
+      "static/chunks/webpack-69a5f269c00b3a99.js",
+      "static/chunks/fd9d1056-450696502a099a01.js",
+      "static/chunks/117-0d5d7fde5d293658.js",
+      "static/chunks/main-app-5adf898317a275bd.js",
+      "static/chunks/502-b485368825e76a85.js",
+      "static/chunks/49-1fe6461f47cd4fd4.js",
+      "static/chunks/app/privacy-policy/page-01d3e2dfb87937c9.js"
+    ]
+  }
+}

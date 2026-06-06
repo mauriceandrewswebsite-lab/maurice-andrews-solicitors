@@ -1,0 +1,144 @@
+{
+  "version": 3,
+  "routes": [
+    {
+      "src": "/_next/__private/trace",
+      "dest": "/404",
+      "status": 404,
+      "continue": true
+    },
+    {
+      "src": "/404/?",
+      "status": 404,
+      "continue": true
+    },
+    {
+      "src": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$",
+      "headers": {
+        "Location": "/$1"
+      },
+      "status": 308
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/_next/data/(.*)",
+      "dest": "/_next/data/$1",
+      "check": true
+    },
+    {
+      "src": "/_next/data/(.*)",
+      "status": 404
+    },
+    {
+      "handle": "resource"
+    },
+    {
+      "src": "/.*",
+      "status": 404
+    },
+    {
+      "handle": "miss"
+    },
+    {
+      "src": "/_next/static/.+",
+      "status": 404,
+      "check": true,
+      "dest": "/_next/static/not-found.txt",
+      "headers": {
+        "content-type": "text/plain; charset=utf-8"
+      }
+    },
+    {
+      "handle": "hit"
+    },
+    {
+      "src": "/_next/static/(?:[^/]+/pages|pages|chunks|runtime|css|image|media|HF5L\\-zajAaZykztIj4HYs)/.+",
+      "headers": {
+        "cache-control": "public,max-age=31536000,immutable"
+      },
+      "continue": true,
+      "important": true
+    },
+    {
+      "handle": "error"
+    },
+    {
+      "status": 404,
+      "src": ".*",
+      "dest": "/404"
+    }
+  ],
+  "overrides": {
+    "404.html": {
+      "path": "404",
+      "contentType": "text/html; charset=utf-8"
+    },
+    "aboutUs.html": {
+      "path": "aboutUs",
+      "contentType": "text/html; charset=utf-8"
+    },
+    "career.html": {
+      "path": "career",
+      "contentType": "text/html; charset=utf-8"
+    },
+    "complaints-policy.html": {
+      "path": "complaints-policy",
+      "contentType": "text/html; charset=utf-8"
+    },
+    "contactUs.html": {
+      "path": "contactUs",
+      "contentType": "text/html; charset=utf-8"
+    },
+    "cookie.html": {
+      "path": "cookie",
+      "contentType": "text/html; charset=utf-8"
+    },
+    "criminal-defence-drugs.html": {
+      "path": "criminal-defence-drugs",
+      "contentType": "text/html; charset=utf-8"
+    },
+    "criminal-defence-financial-crimes.html": {
+      "path": "criminal-defence-financial-crimes",
+      "contentType": "text/html; charset=utf-8"
+    },
+    "criminal-defence-murder.html": {
+      "path": "criminal-defence-murder",
+      "contentType": "text/html; charset=utf-8"
+    },
+    "criminal-defence-national-security-crimes.html": {
+      "path": "criminal-defence-national-security-crimes",
+      "contentType": "text/html; charset=utf-8"
+    },
+    "criminal-defence-sex-human-rights-crimes.html": {
+      "path": "criminal-defence-sex-human-rights-crimes",
+      "contentType": "text/html; charset=utf-8"
+    },
+    "criminal-defence-traffic-offences.html": {
+      "path": "criminal-defence-traffic-offences",
+      "contentType": "text/html; charset=utf-8"
+    },
+    "criminal-defence-violent-crimes.html": {
+      "path": "criminal-defence-violent-crimes",
+      "contentType": "text/html; charset=utf-8"
+    },
+    "index.html": {
+      "path": "index",
+      "contentType": "text/html; charset=utf-8"
+    },
+    "ourTeam.html": {
+      "path": "ourTeam",
+      "contentType": "text/html; charset=utf-8"
+    },
+    "privacy-policy.html": {
+      "path": "privacy-policy",
+      "contentType": "text/html; charset=utf-8"
+    }
+  },
+  "framework": {
+    "slug": "nextjs",
+    "version": "14.2.35"
+  },
+  "crons": []
+}

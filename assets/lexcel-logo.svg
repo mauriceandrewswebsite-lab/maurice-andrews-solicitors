@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <text x="10" y="40" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="#1C2946">LEXCEL</text>
+  <text x="10" y="55" font-family="Arial, sans-serif" font-size="10" fill="#1C2946">ACCREDITED</text>
+  <rect x="160" y="10" width="30" height="40" rx="3" fill="#1C2946"/>
+  <text x="175" y="38" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="white" text-anchor="middle">✓</text>
+</svg>
