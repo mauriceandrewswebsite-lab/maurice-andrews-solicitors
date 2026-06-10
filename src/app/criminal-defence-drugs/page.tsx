@@ -46,14 +46,7 @@ export default function Page() {
       <Header />
       <CookieBanner />
       <main>
-        {/* HERO — full-width banner photo */}
-        <section
-          className="relative flex items-center justify-center bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/assets/defence.png')", minHeight: '420px' }}
-        >
-          <div className="absolute inset-0 bg-primary-dark/40" />
-        </section>
-        {/* HERO — side-by-side */}
+        {/* HERO — side-by-side with image on the right */}
         <section className="bg-white">
           <div className="mx-auto flex max-w-[1240px] flex-col md:flex-row">
             <div className="flex flex-col justify-center px-6 py-12 md:w-1/2 md:px-12 md:py-20">
@@ -72,6 +65,14 @@ export default function Page() {
               >
                 CALL US <ArrowRight size={18} />
               </Link>
+            </div>
+            <div className="relative md:w-1/2">
+              <img
+                src="/assets/defence.png"
+                alt="Drugs offence defence — Maurice Andrews Solicitors"
+                className="h-full w-full object-cover"
+                style={{ minHeight: '420px' }}
+              />
             </div>
 
           </div>
