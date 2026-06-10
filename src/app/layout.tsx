@@ -4,13 +4,13 @@ import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   display: "swap",
   variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://maurice-original-navy-2ak.pages.dev"),
+  metadataBase: new URL("https://maurice-andrews-solicitors-bice.vercel.app"),
   title: "Maurice Andrews Solicitors — Criminal Defence Lawyers Birmingham",
   description: "Expert criminal defence solicitors in Birmingham. 24/7 emergency helpline. Legal Aid available.",
   openGraph: {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   robots: "index, follow",
   alternates: {
-    canonical: "https://maurice-next.vercel.app/",
+    canonical: "https://maurice-andrews-solicitors-bice.vercel.app/",
   },
 };
 
@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en-GB" className={inter.variable}>
       <head>
         <script
             type="application/ld+json"
@@ -48,7 +48,7 @@ export default function RootLayout({
                 "@type": "LegalService",
                 "name": "Maurice Andrews Solicitors",
                 "description": "Expert criminal defence solicitors in Birmingham. 24/7 emergency helpline. Legal Aid available.",
-                "url": "https://maurice-original-navy-2ak.pages.dev",
+                "url": "https://maurice-andrews-solicitors-bice.vercel.app",
                 "telephone": "+441215544900",
                 "email": "info@mauriceandrewssolicitors.co.uk",
                 "address": {

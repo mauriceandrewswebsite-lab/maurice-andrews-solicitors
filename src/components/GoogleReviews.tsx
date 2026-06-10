@@ -8,7 +8,7 @@ const reviews = [
   {
     rating: "4.9",
     name: "AMMAR AHMED",
-    text: "Outstanding service provided by the team — they dealt with my case that had been ongoing for 2 years and finally got the NFA result wanted. Would definitely recommend.",
+    text: "Outstanding service provided by Akeeb Yakoob and Usama had the firm deal with my case that had been ongoing for 2 years and finally got the NFA result wanted would definitely recommend.",
   },
   {
     rating: "4.3",
@@ -19,11 +19,6 @@ const reviews = [
     rating: "4.5",
     name: "SULEMAN HUSSAIN",
     text: "Mariam has been absolutely brilliant and always kept me in touch regarding the case. Maurice Andrew Solicitors are very lucky to have a fantastic solicitor in Mariam. Her service is beyond exceptional.",
-  },
-  {
-    rating: "4.7",
-    name: "SULEMAN HUSSAIN",
-    text: "We are driven by one thing — securing the best outcomes for our clients. We fight the fight and navigate the maze of law for you.",
   },
 ];
 

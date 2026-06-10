@@ -18,7 +18,24 @@ export default function ContactForm() {
   const [selected, setSelected] = useState(initialService);
 
   return (
-    <form className="mx-auto flex max-w-[600px] flex-col gap-4">
+    <form
+      className="mx-auto flex max-w-[600px] flex-col gap-4"
+      onSubmit={(e) => {
+        e.preventDefault();
+        const formData = new FormData(e.currentTarget);
+        const subject = encodeURIComponent(
+          `New enquiry from ${formData.get("name")} — ${formData.get("serviceName") || "General"}`
+        );
+        const body = encodeURIComponent(
+          `Name: ${formData.get("name")}\n` +
+          `Email: ${formData.get("email")}\n` +
+          `Phone: ${formData.get("phone")}\n` +
+          `Service: ${formData.get("serviceName") || "Not specified"}\n\n` +
+          `Message:\n${formData.get("message")}`
+        );
+        window.location.href = `mailto:info@mauriceandrewssolicitors.co.uk?subject=${subject}&body=${body}`;
+      }}
+    >
       <input
         type="text"
         name="name"

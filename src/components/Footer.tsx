@@ -42,7 +42,7 @@ export default function Footer() {
       </div>
       <div className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-center gap-8 border-t border-grey px-5 py-5">
         <div className="flex flex-col items-center gap-2">
-          <iframe src="https://cdn.yoshki.com/iframe/55845r.html" style={{ width: "230px", height: "130px", border: "none" }} scrolling="no" title="SRA Verification" />
+          <iframe src="https://cdn.yoshki.com/iframe/55845r.html" style={{ width: "230px", height: "130px", border: "none" }} loading="lazy" referrerPolicy="no-referrer" sandbox="allow-scripts allow-same-origin" scrolling="no" title="SRA Verification" />
           <span className="text-[10px] font-semibold uppercase tracking-wider text-grey">SRA Regulated</span>
         </div>
         <div className="flex flex-col items-center gap-2">
@@ -54,7 +54,7 @@ export default function Footer() {
           <span className="text-[10px] font-semibold uppercase tracking-wider text-grey">Legal Aid Agency</span>
         </div>
       </div>
-      <div className="border-t border-grey py-5 text-center text-lg text-accent">MAURICE ANDREWS SOLICITORS | COPYRIGHT 2025 | ALL RIGHTS RESERVED</div>
+      <div className="border-t border-grey py-5 text-center text-lg text-accent">MAURICE ANDREWS SOLICITORS | COPYRIGHT 2026 | ALL RIGHTS RESERVED</div>
       <div className="px-5 pb-8 pt-2 text-right text-base font-semibold text-muted"><a href="https://aqldigital.co.uk/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-accent">WEB APP BY ❤ AQL DIGITAL</a></div>
     </footer>
   );
