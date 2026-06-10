@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', system-ui, sans-serif; font-size: 16px; line-height: 1.5; color: #000; }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; height: auto; display: block; }
+}
+@layer components {
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-3.5 text-sm font-bold text-primary transition-all duration-200 hover:scale-105; }
+  .btn-accent { @apply inline-flex items-center justify-center gap-2 rounded-full bg-accent px-8 py-3.5 text-sm font-bold text-primary transition-all duration-200 hover:scale-105; }
+  .btn-outline { @apply inline-flex items-center justify-center gap-2 rounded-full border border-white bg-transparent px-8 py-3.5 text-sm font-bold text-white transition-all duration-200 hover:bg-white hover:text-primary; }
+}
