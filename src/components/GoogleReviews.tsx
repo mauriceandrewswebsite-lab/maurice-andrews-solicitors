@@ -53,30 +53,16 @@ export default function GoogleReviews() {
     <section className="bg-white px-4 py-14">
       <div className="mx-auto max-w-[1240px]">
         <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-start lg:justify-between">
-          {/* LEFT: Google badge - static */}
+          {/* LEFT: Google badge - static, on-brand navy */}
           <div className="flex flex-col items-center bg-white z-10 mt-5 lg:ml-0 lg:mt-12 shrink-0">
+            {/* Navy Google "G" icon — matches original site's brand-consistent approach */}
             <div className="flex items-center w-[87px] h-[87px]">
-              <svg
-                width="87"
-                height="87"
-                viewBox="0 0 87 87"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="43.5" cy="43.5" r="43.5" fill="white" />
-                <path
-                  d="M43.5 18.5C35.4 18.5 27.9 22.2 22.8 28.1L30.2 33.8C33.5 29.9 38.3 27.5 43.5 27.5C49.8 27.5 55.3 30.7 58.7 35.5L66.7 29.2C61.4 22.7 52.8 18.5 43.5 18.5Z"
-                  fill="#EA4335"
-                />
-                <path
-                  d="M68.5 43.5C68.5 42.1 68.4 40.8 68.2 39.5H43.5V48.5H57.5C56.9 51.5 55.2 54 52.8 55.7L60.5 61.7C65.6 57 68.5 50.6 68.5 43.5Z"
-                  fill="#4285F4"
-                />
-                <path
-                  d="M30.2 53.2C33.4 58.2 38.1 61.5 43.5 61.5C49.8 61.5 55.3 58.7 58.7 53.5L52.8 55.7C50.1 57.4 46.9 58.5 43.5 58.5C38.3 58.5 33.5 56.1 30.2 52.3L22.8 58C27.8 64.8 35.1 68.5 43.5 68.5C52.2 68.5 60.6 64.1 65.7 57L57.9 50.9C55.1 53.3 49.5 55.5 43.5 55.5C38.1 55.5 33.4 53.7 30.2 49.8L22.8 55.5C27.9 61.4 35.4 65.1 43.5 65.1C49.5 65.1 54.9 62.5 58.7 58.7L66.7 64.9C61.3 71.5 52.5 75.5 43.5 75.5C32.6 75.5 22.7 69.9 17 61.7L24.7 55.7C22.3 54 20.6 51.5 20 48.5H43.5V39.5H68.2C66.9 48.1 64.1 55.5 60.5 61.7L68.2 67.9C63.3 73.2 56.7 76 43.5 76C32.3 76 22.2 70.6 16.5 62.5L24.3 56.5C27.4 60.2 31.9 62.5 36.8 62.5C42.6 62.5 47.5 58.6 47.5 52.5C47.5 46.4 42.6 42.5 36.8 42.5H20C19.8 43.8 19.7 45.1 19.7 46.5C19.7 55.1 23.4 62.9 29.7 68.5L22 74.9C16.8 69.8 13.5 62.7 13.5 54.5C13.5 46.3 16.8 39.2 22 34.1L29.7 29.7C23.4 24.1 19.7 16.3 19.7 7.7C19.7 6.3 19.8 4.9 20 3.5H36.8C42.6 3.5 47.5 7.4 47.5 13.5C47.5 19.6 42.6 23.5 36.8 23.5H24.3C27.4 19.8 31.9 17.5 36.8 17.5C42.6 17.5 47.5 21.4 47.5 27.5C47.5 33.6 42.6 37.5 36.8 37.5H20C19.8 38.8 19.7 40.1 19.7 41.5"
-                  fill="#34A853"
-                />
-              </svg>
+              <img
+                src="/assets/google/google-icon.svg"
+                alt="Google"
+                width={87}
+                height={87}
+              />
             </div>
             <div className="px-7 text-center">
               <p className="text-3xl text-start mb-2 font-bold text-primary">
@@ -87,6 +73,25 @@ export default function GoogleReviews() {
                 <p className="px-2 font-medium text-primary">+</p>
                 <p className="font-medium text-primary">reviews</p>
               </span>
+            </div>
+            {/* Navy "Google" wordmark + arrow — on-brand, matches original */}
+            <div className="mt-6 flex items-center gap-2">
+              <img
+                src="/assets/google/google-wordmark.svg"
+                alt=""
+                aria-hidden="true"
+                width={140}
+                height={46}
+                className="w-[110px] h-auto"
+              />
+              <img
+                src="/assets/google/google-arrow.svg"
+                alt=""
+                aria-hidden="true"
+                width={17}
+                height={19}
+                className="w-4 h-[18px] -ml-1"
+              />
             </div>
           </div>
 
