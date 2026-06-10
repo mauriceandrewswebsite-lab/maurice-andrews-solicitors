@@ -43,8 +43,12 @@ export default function HomePage() {
       <main>
         {/* HERO — photo only, text is baked into the image */}
         <section
-          className="relative flex items-center justify-center bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/assets/front-page-banner.png')", minHeight: '420px' }}
+          className="relative w-full bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/assets/front-page-banner.png')",
+            aspectRatio: '1706 / 922',
+            minHeight: '280px',
+          }}
         >
           <div className="absolute inset-0 bg-primary-dark/40" />
         </section>
