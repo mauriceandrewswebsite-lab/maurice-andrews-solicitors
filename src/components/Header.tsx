@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Search, X, ArrowRight, Mail, Phone } from "lucide-react";
@@ -16,7 +16,50 @@ const categories: { label: string; href: string }[] = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const menuRef = useRef<HTMLElement | null>(null);
+  const menuButtonRef = useRef<HTMLButtonElement | null>(null);
   const closeAll = () => setOpen(false);
+
+  // Close on Escape + focus trap while menu is open
+  useEffect(() => {
+    if (!open) return;
+
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        closeAll();
+        return;
+      }
+      if (e.key === "Tab" && menuRef.current) {
+        const focusable = menuRef.current.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+        );
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    };
+    document.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+
+    // Move focus to first menu link
+    const firstLink = menuRef.current?.querySelector<HTMLElement>("a[href]");
+    firstLink?.focus();
+
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+      // Return focus to the menu button
+      menuButtonRef.current?.focus();
+    };
+  }, [open]);
 
   return (
     <>
@@ -35,24 +78,31 @@ export default function Header() {
 
             {/* Search */}
             <div className="relative ml-auto mr-3 hidden lg:block">
-              <input type="text" placeholder="Find my offence" className="w-[260px] rounded-full border border-gray-300 bg-gray-50 py-2 pl-4 pr-10 text-sm text-gray-700 outline-none placeholder:text-gray-400 focus:border-primary" />
-              <Search className="absolute right-3.5 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-400" />
+              <input type="text" placeholder="Find my offence" aria-label="Find my offence" className="w-[260px] rounded-full border border-gray-300 bg-gray-50 py-2 pl-4 pr-10 text-sm text-gray-700 outline-none placeholder:text-gray-400 focus:border-primary" />
+              <Search className="absolute right-3.5 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-400" aria-hidden="true" />
             </div>
 
             {/* EMAIL US + CALL US NOW buttons */}
             <div className="hidden gap-2 lg:flex">
               <a href="mailto:info@mauriceandrewssolicitors.co.uk" className="flex items-center gap-2 rounded-full border-2 border-primary px-4 py-2 text-xs font-bold text-primary transition-all hover:bg-primary hover:text-white">
-                <Mail size={14} />EMAIL US
+                <Mail size={14} aria-hidden="true" />EMAIL US
               </a>
               <a href="tel:01215544900" className="flex items-center gap-2 rounded-full border-2 border-primary px-4 py-2 text-xs font-bold text-primary transition-all hover:bg-primary hover:text-white">
-                <Phone size={14} />CALL US NOW
+                <Phone size={14} aria-hidden="true" />CALL US NOW
               </a>
             </div>
 
-            {/* Menu button */}
-            <button className="ml-3 flex items-center gap-3 lg:ml-4" onClick={() => setOpen(true)} aria-label="Menu">
+            {/* Menu button — minimum 44x44px touch target */}
+            <button
+              ref={menuButtonRef}
+              className="ml-3 flex min-h-[44px] min-w-[44px] items-center gap-3 px-1 lg:ml-4"
+              onClick={() => setOpen(true)}
+              aria-label="Open menu"
+              aria-expanded={open}
+              aria-controls="hamburger-menu"
+            >
               <span className="text-sm font-semibold text-primary underline">Menu</span>
-              <span className="relative h-10 w-10">
+              <span className="relative h-10 w-10" aria-hidden="true">
                 <span className="absolute left-1/2 top-3 h-0.5 w-[22px] -translate-x-1/2 bg-primary" />
                 <span className="absolute left-1/2 top-1/2 h-0.5 w-[22px] -translate-x-1/2 -translate-y-1/2 bg-primary" />
                 <span className="absolute bottom-3 left-1/2 h-0.5 w-[22px] -translate-x-1/2 bg-primary" />
@@ -75,7 +125,14 @@ export default function Header() {
       {open && (
         <>
           <div className="fixed inset-0 z-[1000] bg-black/50" onClick={closeAll} />
-          <nav className="fixed right-0 top-0 z-[1001] h-full w-[350px] overflow-y-auto bg-nav-bg p-10">
+          <nav
+            ref={menuRef}
+            id="hamburger-menu"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Site menu"
+            className="fixed right-0 top-0 z-[1001] h-full w-[350px] overflow-y-auto bg-nav-bg p-10"
+          >
             <div className="mb-5 flex items-center justify-between">
               <span className="text-lg font-bold text-primary">Menu</span>
               <button className="text-2xl text-primary" onClick={closeAll} aria-label="Close menu"><X /></button>

@@ -95,6 +95,9 @@ export default function GoogleReviews() {
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
+              role="region"
+              aria-roledescription="carousel"
+              aria-label="Customer reviews"
               breakpoints={{
                 640: { slidesPerView: 1.5 },
                 768: { slidesPerView: 2 },
