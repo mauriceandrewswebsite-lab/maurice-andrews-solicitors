@@ -56,7 +56,14 @@ export default function Page() {
                 CALL US <ArrowRight size={18} />
               </Link>
             </div>
-
+            <div className="relative md:w-1/2">
+              <img
+                src="/assets/defence.png"
+                alt="Sex & human rights crimes defence — Maurice Andrews Solicitors"
+                className="h-full w-full object-cover"
+                style={{ minHeight: '420px' }}
+              />
+            </div>
           </div>
         </section>
 

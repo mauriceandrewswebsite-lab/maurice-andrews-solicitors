@@ -63,7 +63,7 @@ function TeamProfileModalInner({ team }: { team: TeamMember[] }) {
           <div className="flex flex-col justify-center p-8 md:w-1/2 md:p-12">
             <h2 className="mb-2 text-3xl font-bold text-primary md:text-4xl">{member.name}</h2>
             <p className="mb-6 text-xs font-semibold uppercase tracking-wider text-[#8B9DC3]">
-              {member.title}
+              {member.profileTitle || member.title}
             </p>
             <p className="text-sm leading-relaxed text-[#333] md:text-base">{member.bio}</p>
             <div className="mt-8 flex flex-wrap gap-3">
