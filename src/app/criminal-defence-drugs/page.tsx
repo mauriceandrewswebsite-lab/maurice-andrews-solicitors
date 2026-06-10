@@ -46,6 +46,13 @@ export default function Page() {
       <Header />
       <CookieBanner />
       <main>
+        {/* HERO — full-width banner photo */}
+        <section
+          className="relative flex items-center justify-center bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/assets/defence.png')", minHeight: '420px' }}
+        >
+          <div className="absolute inset-0 bg-primary-dark/40" />
+        </section>
         {/* HERO — side-by-side */}
         <section className="bg-white">
           <div className="mx-auto flex max-w-[1240px] flex-col md:flex-row">
