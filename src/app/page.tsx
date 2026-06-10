@@ -44,7 +44,7 @@ export default function HomePage() {
         {/* HERO — photo only, text is baked into the image */}
         <section
           className="relative flex items-center justify-center bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/assets/hero-navy-2men.png')", minHeight: '420px' }}
+          style={{ backgroundImage: "url('/assets/front-page-banner.png')", minHeight: '420px' }}
         >
           <div className="absolute inset-0 bg-primary-dark/40" />
         </section>
