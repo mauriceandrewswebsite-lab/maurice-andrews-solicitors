@@ -41,29 +41,33 @@ export default function HomePage() {
     <>
       <Header /><CookieBanner />
       <main>
-        {/* HERO — photo only, text is baked into the image */}
+        {/* HERO — photo with text baked in, gradient overlay for readability */}
         <section
           className="relative w-full bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/assets/front-page-banner.png')",
-            aspectRatio: '1706 / 922',
+            backgroundImage: "url('/assets/front-page-banner.jpg')",
+            aspectRatio: '1086 / 724',
             minHeight: '280px',
           }}
         >
-          <div className="absolute inset-0 bg-primary-dark/40" />
+          {/* Top-to-bottom gradient: dark at top (slogan text) → transparent at bottom (men) */}
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-dark/70 via-primary-dark/30 to-transparent" />
         </section>
 
         {/* CTA — Left white + Right dark blue emergency box */}
         <section>
           <div className="flex flex-col md:flex-row max-md:justify-center">
             {/* LEFT — white bg */}
-            <div className="flex-1 px-4 py-8 md:py-10 md:pl-10 md:pr-10 lg:py-16 lg:pl-16 max-md:text-center">
-              <h2 className="mb-10 text-xl font-medium text-primary md:mb-12 md:text-3xl lg:mb-24 lg:text-5xl">
-                GET IMMEDIATE<br />ENGAGEMENT AND<br />YOUR BEST CHANCE<br />OF ACQUITTAL
+            <div className="flex-1 px-4 py-8 md:py-10 md:pl-10 md:pr-10 lg:py-12 lg:pl-16 max-md:text-center">
+              <h2 className="mb-4 text-base font-semibold uppercase tracking-wide text-primary md:text-lg lg:text-2xl lg:mb-6">
+                Get immediate engagement
               </h2>
+              <p className="mb-6 text-sm leading-relaxed text-grey md:text-base lg:mb-8 lg:text-lg">
+                Your best chance of acquittal starts the moment you call. We answer 24/7, attend police stations across the West Midlands, and act fast on every case.
+              </p>
               <a
                 href="/contactUs"
-                className="group relative inline-flex items-center gap-2 overflow-hidden bg-black px-8 py-3 text-base font-semibold text-white transition-all duration-300"
+                className="group relative inline-flex items-center gap-2 overflow-hidden bg-black px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 md:px-8 md:py-3 md:text-base"
               >
                 <span className="absolute inset-0 w-0 bg-primary transition-all duration-300 group-hover:w-full" />
                 <span className="relative z-10">LETS TALK IT OVER</span>
