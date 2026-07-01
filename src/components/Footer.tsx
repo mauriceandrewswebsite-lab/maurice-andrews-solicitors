@@ -12,7 +12,11 @@ const moreLinks = [
   ["ALCOHOL AND YOUNG PEOPLE LAW", "https://www.gov.uk/alcohol-young-people-law"],
   ["COURT CALENDAR", "https://en.wikipedia.org/wiki/Legal_year#England"],
   ["LEGISLATION UNDERSTANDING", "https://www.legislation.gov.uk/understanding-legislation"],
-  ["COMPLAINTS POLICY", "/complaints-policy"], ["WEBSITE PRIVACY POLICY", "/privacy-policy"], ["COOKIE", "/cookie"],
+  ["SERVICE COMPLAINTS POLICY", "/complaints-policy"],
+  ["DATA PROTECTION COMPLAINTS PROCEDURE", "/data-protection-complaints-procedure"],
+  ["DATA PROTECTION COMPLAINT FORM", "/data-protection-complaint-form"],
+  ["PRIVACY NOTICE", "/privacy-policy"],
+  ["COOKIE", "/cookie"],
 ];
 const aboutLinks = [["ABOUT US", "/aboutUs"], ["CONTACT US", "/contactUs"], ["OUR TEAM", "/ourTeam"], ["CAREERS", "/career"]];
 
