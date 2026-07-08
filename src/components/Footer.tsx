@@ -50,11 +50,15 @@ export default function Footer() {
           <span className="text-[10px] font-semibold uppercase tracking-wider text-grey">SRA Regulated</span>
         </div>
         <div className="flex flex-col items-center gap-2">
-          <img src="/assets/lexcel-logo.svg" alt="Lexcel Accredited" className="h-[50px] w-auto" />
+          <a href="https://www.lawsociety.org.uk/topics/law-practice-standards-and-regulation/lexcel/" target="_blank" rel="noopener noreferrer" aria-label="Lexcel Accredited - The Law Society's practice quality mark for legal practices">
+            <img src="/assets/lexcel-logo.svg" alt="Lexcel Accredited" className="h-[50px] w-auto" />
+          </a>
           <span className="text-[10px] font-semibold uppercase tracking-wider text-grey">Lexcel Accredited</span>
         </div>
         <div className="flex flex-col items-center gap-2">
-          <img src="/assets/legal-aid-logo.svg" alt="Legal Aid Agency" className="h-[50px] w-auto" />
+          <a href="https://www.gov.uk/government/organisations/legal-aid-agency" target="_blank" rel="noopener noreferrer" aria-label="Legal Aid Agency">
+            <img src="/assets/legal-aid-logo.svg" alt="Legal Aid Agency" className="h-[50px] w-auto" />
+          </a>
           <span className="text-[10px] font-semibold uppercase tracking-wider text-grey">Legal Aid Agency</span>
         </div>
       </div>
