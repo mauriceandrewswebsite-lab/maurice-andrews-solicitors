@@ -65,7 +65,7 @@ export default function Page() {
                 src="/assets/defence.png"
                 alt="Traffic offences defence — Maurice Andrews Solicitors"
                 className="h-full w-full object-cover"
-                style={{ minHeight: '420px' }}
+                style={{ minHeight: '420px', aspectRatio: '1691 / 930' }}
               />
             </div>
           </div>

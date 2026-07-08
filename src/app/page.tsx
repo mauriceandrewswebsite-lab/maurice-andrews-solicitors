@@ -46,7 +46,7 @@ export default function HomePage() {
           className="relative w-full bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: "url('/assets/front-page-banner.jpg')",
-            aspectRatio: '1086 / 724',
+            height: 'clamp(360px, 50vw, 700px)',
             minHeight: '280px',
           }}
         >
