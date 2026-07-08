@@ -52,8 +52,8 @@ export default function Footer() {
           <span className="text-[11px] font-semibold uppercase tracking-wider text-grey">SRA Regulated · Firm ID 668336</span>
         </div>
         <div className="flex flex-col items-center gap-2">
-          <a href="https://www.lawsociety.org.uk/topics/firm-accreditations/lexcel" target="_blank" rel="noopener noreferrer" aria-label="Lexcel Accredited - The Law Society's practice quality mark for legal practices">
-            <img src="/assets/lexcel-logo.svg" alt="Lexcel Accredited" className="h-[80px] w-auto" />
+          <a href="https://www.lawsociety.org.uk/topics/firm-accreditations/lexcel" target="_blank" rel="noopener noreferrer" aria-label="Lexcel Accredited Practice Management Standard - The Law Society">
+            <img src="/assets/lexcel-badge.png" alt="Lexcel Accredited Practice Management Standard" className="h-[100px] w-auto" />
           </a>
           <span className="text-[11px] font-semibold uppercase tracking-wider text-grey">Lexcel Accredited</span>
         </div>
