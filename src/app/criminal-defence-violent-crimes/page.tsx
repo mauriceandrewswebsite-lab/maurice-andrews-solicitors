@@ -61,7 +61,7 @@ export default function Page() {
                 CALL US <ArrowRight size={18} />
               </Link>
             </div>
-            <div className="md:w-1/2 overflow-hidden"><img src="/assets/defence.png" alt="Violent crimes defence — Maurice Andrews Solicitors" className="block h-full w-full object-cover" /></div>
+            <div className="md:w-1/2 overflow-hidden pt-3 md:pt-4"><img src="/assets/defence.png" alt="Violent crimes defence — Maurice Andrews Solicitors" className="block h-full w-full object-cover" /></div>
           </div>
         </section>
 
