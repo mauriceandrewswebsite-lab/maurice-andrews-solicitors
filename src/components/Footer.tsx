@@ -46,10 +46,10 @@ export default function Footer() {
       </div>
       <div className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-center gap-10 border-t border-grey px-5 py-6">
         <div className="flex flex-col items-center gap-2">
-          <a href="https://www.sra.org.uk/solicitors/firm-based-authorisation/abs-register/668336/" target="_blank" rel="noopener noreferrer" aria-label="SRA Authorised & Regulated - Solicitors Regulation Authority register entry for Maurice Andrews Solicitors (firm ID 668336)">
+          <a href="https://www.sra.org.uk/consumers/register/organisation/?sraNumber=637667&prevSearchText=Maurice%20Andrews%20solictors&prevSearchFilter=Firm" target="_blank" rel="noopener noreferrer" aria-label="SRA Authorised & Regulated - Solicitors Regulation Authority register entry for Maurice Andrews Solicitors (firm ID 637667)">
             <img src="/assets/sra-regulated.svg" alt="SRA Authorised & Regulated" className="h-[80px] w-auto" />
           </a>
-          <span className="text-[11px] font-semibold uppercase tracking-wider text-grey">SRA Regulated · Firm ID 668336</span>
+          <span className="text-[11px] font-semibold uppercase tracking-wider text-grey">SRA Regulated · Firm ID 637667</span>
         </div>
         <div className="flex flex-col items-center gap-2">
           <a href="https://www.lawsociety.org.uk/topics/firm-accreditations/lexcel" target="_blank" rel="noopener noreferrer" aria-label="Lexcel Accredited Practice Management Standard - The Law Society">
