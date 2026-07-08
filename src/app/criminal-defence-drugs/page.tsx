@@ -47,7 +47,7 @@ export default function Page() {
       <CookieBanner />
       <main>
         {/* HERO — side-by-side with image on the right */}
-        <section className="bg-white">
+        <section className="bg-[#1C2946]">
           <div className="mx-auto flex max-w-[1240px] flex-col md:flex-row">
             <div className="flex flex-col justify-center px-6 py-12 md:w-1/2 md:px-12 md:py-20">
               <h1 className="mb-2 text-[26px] font-bold leading-tight text-primary sm:text-[34px] md:text-[40px]">
@@ -66,7 +66,7 @@ export default function Page() {
                 CALL US <ArrowRight size={18} />
               </Link>
             </div>
-            <div className="relative md:w-1/2">
+            <div className="relative bg-[#1C2946] md:w-1/2">
               <img
                 src="/assets/defence.png"
                 alt="Drugs offence defence — Maurice Andrews Solicitors"
@@ -82,7 +82,7 @@ export default function Page() {
         <section>
           <div className="flex flex-col md:flex-row">
             {/* Left: NATIONWIDE */}
-            <div className="flex flex-col items-center justify-center bg-white px-6 py-12 md:w-1/2 md:py-16">
+            <div className="flex flex-col items-center justify-center bg-[#1C2946] px-6 py-12 text-white md:w-1/2 md:py-16">
               <h2 className="mb-6 text-center text-2xl font-bold text-primary sm:text-[28px]">
                 NATIONWIDE<br />DRUG OFFENCE SOLICITORS
               </h2>
@@ -155,7 +155,7 @@ export default function Page() {
         <section>
           <div className="flex flex-col md:flex-row">
             {/* Left */}
-            <div className="flex flex-col items-center justify-center bg-white px-6 py-12 md:w-1/2 md:py-16">
+            <div className="flex flex-col items-center justify-center bg-[#1C2946] px-6 py-12 text-white md:w-1/2 md:py-16">
               <h2 className="mb-6 text-center text-2xl font-bold text-primary sm:text-[28px]">
                 LEGAL AID AVAILABLE AT<br />MAURICE ANDREWS SOLICITORS
               </h2>
