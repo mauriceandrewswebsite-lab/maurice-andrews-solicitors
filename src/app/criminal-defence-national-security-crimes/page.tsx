@@ -56,15 +56,15 @@ export default function Page() {
                 CALL US <ArrowRight size={18} />
               </Link>
             </div>
-            <div className="relative min-h-[420px] md:w-1/2"><img src="/assets/defence.png" alt="National security crimes defence — Maurice Andrews Solicitors" className="absolute inset-0 h-full w-full object-cover" /></div>
+            <div className="md:w-1/2"><img src="/assets/defence.png" alt="National security crimes defence — Maurice Andrews Solicitors" className="block h-auto w-full" style={{aspectRatio: '1691 / 930'}} /></div>
           </div>
         </section>
 
         {/* NATIONWIDE + EMERGENCY split section */}
         <section>
-          <div className="flex flex-col md:flex-row">
+          <div className="mx-auto flex max-w-[1240px] flex-col md:flex-row">
             {/* Left: NATIONWIDE */}
-            <div className="flex flex-col items-start bg-white px-6 pt-12 pb-12 text-left md:w-1/2 md:pt-16 md:pb-16">
+            <div className="flex flex-col items-start bg-white px-6 py-12 text-left md:w-1/2 md:px-12 md:py-20">
               <h2 className="mb-6 text-2xl font-bold text-primary sm:text-[28px]">
                 NATIONWIDE<br />NATIONAL SECURITY CRIMES SOLICITORS
               </h2>
@@ -135,9 +135,9 @@ export default function Page() {
 
         {/* LEGAL AID split section */}
         <section>
-          <div className="flex flex-col md:flex-row">
+          <div className="mx-auto flex max-w-[1240px] flex-col md:flex-row">
             {/* Left */}
-            <div className="flex flex-col items-start bg-white px-6 pt-12 pb-12 text-left md:w-1/2 md:pt-16 md:pb-16">
+            <div className="flex flex-col items-start bg-white px-6 py-12 text-left md:w-1/2 md:px-12 md:py-20">
               <h2 className="mb-6 text-2xl font-bold text-primary sm:text-[28px]">
                 LEGAL AID AVAILABLE AT<br />MAURICE ANDREWS SOLICITORS
               </h2>
