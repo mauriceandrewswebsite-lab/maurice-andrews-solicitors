@@ -46,7 +46,7 @@ export default function Footer() {
       </div>
       <div className="mx-auto flex max-w-[1200px] items-center justify-center gap-16 border-t border-grey px-5 py-6">
         <a href="https://www.sra.org.uk/consumers/register/organisation/?sraNumber=637667&prevSearchText=Maurice%20Andrews%20solictors&prevSearchFilter=Firm" target="_blank" rel="noopener noreferrer" aria-label="SRA Authorised & Regulated">
-          <img src="/assets/sra-regulated.svg" alt="SRA Regulated" className="h-40 w-auto" />
+          <img src="/assets/sra-regulated.png" alt="SRA Regulated" className="h-40 w-auto" />
         </a>
         <a href="https://www.lawsociety.org.uk/topics/firm-accreditations/lexcel" target="_blank" rel="noopener noreferrer" aria-label="Lexcel Accredited">
           <img src="/assets/lexcel-badge.png" alt="Lexcel Accredited" className="h-44 w-auto" />
