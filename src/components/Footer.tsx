@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-center gap-2">
           <a href="https://www.lawsociety.org.uk/topics/firm-accreditations/lexcel" target="_blank" rel="noopener noreferrer" aria-label="Lexcel Accredited Practice Management Standard - The Law Society">
-            <img src="/assets/lexcel-badge.png" alt="Lexcel Accredited Practice Management Standard" className="h-[100px] w-auto" />
+            <img src="/assets/lexcel-badge.png" alt="Lexcel Accredited Practice Management Standard" className="h-[80px] w-auto" />
           </a>
           <span className="text-[11px] font-semibold uppercase tracking-wider text-grey">Lexcel Accredited</span>
         </div>
