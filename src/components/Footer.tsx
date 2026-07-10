@@ -52,7 +52,7 @@ export default function Footer() {
           <img src="/assets/lexcel-badge.png" alt="Lexcel Accredited" className="h-20 w-auto" />
         </a>
         <a href="https://www.gov.uk/legal-aid" target="_blank" rel="noopener noreferrer" aria-label="Legal Aid Agency">
-          <img src="/assets/legal-aid-logo.svg" alt="Legal Aid Agency" className="h-20 w-auto" />
+          <img src="/assets/legal-aid-logo.png" alt="Legal Aid Agency" className="h-20 w-auto" />
         </a>
       </div>
       <div className="border-t border-grey py-5 text-center text-lg text-accent">MAURICE ANDREWS SOLICITORS | COPYRIGHT 2026 | ALL RIGHTS RESERVED</div>
