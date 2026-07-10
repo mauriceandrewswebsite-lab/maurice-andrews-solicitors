@@ -49,7 +49,7 @@ export default function Footer() {
           <img src="/assets/sra-regulated.png" alt="SRA Regulated" className="h-24 w-auto" />
         </a>
         <a href="https://www.lawsociety.org.uk/topics/firm-accreditations/lexcel" target="_blank" rel="noopener noreferrer" aria-label="Lexcel Accredited">
-          <img src="/assets/lexcel-badge.png" alt="Lexcel Accredited" className="h-24 w-auto" />
+          <img src="/assets/lexcel-badge.png" alt="Lexcel Accredited" className="h-32 w-auto" />
         </a>
         <a href="https://www.gov.uk/legal-aid" target="_blank" rel="noopener noreferrer" aria-label="Legal Aid Agency">
           <img src="/assets/legal-aid-logo.png" alt="Legal Aid Agency" className="h-24 w-auto" />
