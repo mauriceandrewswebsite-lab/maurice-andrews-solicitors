@@ -46,13 +46,13 @@ export default function Footer() {
       </div>
       <div className="mx-auto flex max-w-[1200px] items-center justify-center gap-8 border-t border-grey px-5 py-6">
         <a href="https://www.sra.org.uk/consumers/register/organisation/?sraNumber=637667&prevSearchText=Maurice%20Andrews%20solictors&prevSearchFilter=Firm" target="_blank" rel="noopener noreferrer" aria-label="SRA Authorised & Regulated">
-          <img src="/assets/sra-regulated.svg" alt="SRA Regulated" className="h-20 w-auto" />
+          <img src="/assets/sra-regulated.png" alt="SRA Regulated" className="h-24 w-auto" />
         </a>
         <a href="https://www.lawsociety.org.uk/topics/firm-accreditations/lexcel" target="_blank" rel="noopener noreferrer" aria-label="Lexcel Accredited">
-          <img src="/assets/lexcel-badge.png" alt="Lexcel Accredited" className="h-20 w-auto" />
+          <img src="/assets/lexcel-badge.png" alt="Lexcel Accredited" className="h-24 w-auto" />
         </a>
         <a href="https://www.gov.uk/legal-aid" target="_blank" rel="noopener noreferrer" aria-label="Legal Aid Agency">
-          <img src="/assets/legal-aid-logo.png" alt="Legal Aid Agency" className="h-20 w-auto" />
+          <img src="/assets/legal-aid-logo.png" alt="Legal Aid Agency" className="h-24 w-auto" />
         </a>
       </div>
       <div className="border-t border-grey py-5 text-center text-lg text-accent">MAURICE ANDREWS SOLICITORS | COPYRIGHT 2026 | ALL RIGHTS RESERVED</div>
