@@ -44,25 +44,16 @@ export default function Footer() {
           <div className="mt-6"><h4 className="mb-3 text-xs font-bold uppercase text-accent">OFFICE OPENING HOURS</h4><p className="text-sm">Mon to Fri : 9.00am to 5:30 pm</p></div>
         </div>
       </div>
-      <div className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-center gap-10 border-t border-grey px-5 py-6">
-        <div className="flex flex-col items-center gap-2">
-          <a href="https://www.sra.org.uk/consumers/register/organisation/?sraNumber=637667&prevSearchText=Maurice%20Andrews%20solictors&prevSearchFilter=Firm" target="_blank" rel="noopener noreferrer" aria-label="SRA Authorised & Regulated - Solicitors Regulation Authority register entry for Maurice Andrews Solicitors (firm ID 637667)">
-            <img src="/assets/sra-regulated.svg" alt="SRA Authorised & Regulated" className="h-[80px] w-auto" />
-          </a>
-          <span className="text-[11px] font-semibold uppercase tracking-wider text-grey">SRA Regulated · Firm ID 637667</span>
-        </div>
-        <div className="flex flex-col items-center gap-2">
-          <a href="https://www.lawsociety.org.uk/topics/firm-accreditations/lexcel" target="_blank" rel="noopener noreferrer" aria-label="Lexcel Accredited Practice Management Standard - The Law Society">
-            <img src="/assets/lexcel-badge.png" alt="Lexcel Accredited Practice Management Standard" className="h-[80px] w-auto" />
-          </a>
-          <span className="text-[11px] font-semibold uppercase tracking-wider text-grey">Lexcel Accredited</span>
-        </div>
-        <div className="flex flex-col items-center gap-2">
-          <a href="https://www.gov.uk/legal-aid" target="_blank" rel="noopener noreferrer" aria-label="GOV.UK - Legal Aid information">
-            <img src="/assets/legal-aid-logo.svg" alt="Legal Aid Agency" className="h-[80px] w-auto" />
-          </a>
-          <span className="text-[11px] font-semibold uppercase tracking-wider text-grey">Legal Aid Agency</span>
-        </div>
+      <div className="mx-auto flex max-w-[1200px] items-center justify-center gap-8 border-t border-grey px-5 py-6">
+        <a href="https://www.sra.org.uk/consumers/register/organisation/?sraNumber=637667&prevSearchText=Maurice%20Andrews%20solictors&prevSearchFilter=Firm" target="_blank" rel="noopener noreferrer" aria-label="SRA Authorised & Regulated">
+          <img src="/assets/sra-regulated.svg" alt="SRA Regulated" className="h-20 w-auto" />
+        </a>
+        <a href="https://www.lawsociety.org.uk/topics/firm-accreditations/lexcel" target="_blank" rel="noopener noreferrer" aria-label="Lexcel Accredited">
+          <img src="/assets/lexcel-badge.png" alt="Lexcel Accredited" className="h-20 w-auto" />
+        </a>
+        <a href="https://www.gov.uk/legal-aid" target="_blank" rel="noopener noreferrer" aria-label="Legal Aid Agency">
+          <img src="/assets/legal-aid-logo.svg" alt="Legal Aid Agency" className="h-20 w-auto" />
+        </a>
       </div>
       <div className="border-t border-grey py-5 text-center text-lg text-accent">MAURICE ANDREWS SOLICITORS | COPYRIGHT 2026 | ALL RIGHTS RESERVED</div>
       <div className="px-5 pb-8 pt-2 text-right text-base font-semibold text-muted"><a href="https://aqldigital.co.uk/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-accent">WEB APP BY ❤ AQL DIGITAL</a></div>
