@@ -44,7 +44,7 @@ export default function Footer() {
           <div className="mt-6"><h4 className="mb-3 text-xs font-bold uppercase text-accent">OFFICE OPENING HOURS</h4><p className="text-sm">Mon to Fri : 9.00am to 5:30 pm</p></div>
         </div>
       </div>
-      <div className="mx-auto flex max-w-[1200px] items-center justify-center gap-8 border-t border-grey px-5 py-6">
+      <div className="mx-auto flex max-w-[1200px] items-center justify-center gap-16 border-t border-grey px-5 py-6">
         <a href="https://www.sra.org.uk/consumers/register/organisation/?sraNumber=637667&prevSearchText=Maurice%20Andrews%20solictors&prevSearchFilter=Firm" target="_blank" rel="noopener noreferrer" aria-label="SRA Authorised & Regulated">
           <img src="/assets/sra-regulated.png" alt="SRA Regulated" className="h-24 w-auto" />
         </a>
