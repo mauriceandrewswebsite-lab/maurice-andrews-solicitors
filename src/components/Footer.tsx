@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { offices } from "@/data/offices";
 
 const defence = [
   ["DRUGS", "/criminal-defence-drugs"], ["FINANCIAL CRIMES", "/criminal-defence-financial-crimes"],
@@ -30,7 +31,7 @@ const socials = [
 export default function Footer() {
   return (
     <footer className="bg-primary-dark text-white">
-      <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-8 px-5 py-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-8 px-5 py-10 sm:grid-cols-2 lg:grid-cols-5">
         <div>
           <Image src="/assets/whiteLogo.svg" alt="Maurice Andrews" width={160} height={60} className="mb-4 h-auto w-[140px]" />
           <h3 className="mb-3 text-lg font-medium">THERE IS A <span className="text-accent">DEFENCE</span><br />FOR EVERY <span className="text-accent">OFFENCE</span></h3>
@@ -42,6 +43,23 @@ export default function Footer() {
         <div>
           <h4 className="mb-3 text-xs font-bold uppercase text-accent">ABOUT US</h4>{aboutLinks.map(([l, h]) => <FL key={l} href={h}>{l}</FL>)}
           <div className="mt-6"><h4 className="mb-3 text-xs font-bold uppercase text-accent">OFFICE OPENING HOURS</h4><p className="text-sm">Mon to Fri : 9.00am to 5:30 pm</p></div>
+        </div>
+        <div>
+          <h4 className="mb-3 text-xs font-bold uppercase text-accent">OUR OFFICES</h4>
+          {offices.map((o) => (
+            <div key={o.id} className="mb-5 last:mb-0">
+              <p className="mb-1 text-sm font-bold uppercase">{o.label}</p>
+              {o.fullAddressMultiLine.map((line, i) => (
+                <p key={i} className="text-sm leading-snug">{line}</p>
+              ))}
+              <p className="mt-1 text-sm">
+                <a href={o.phoneTel} className="transition-colors hover:text-accent">{o.phoneDisplay}</a>
+              </p>
+              <p className="mt-1 text-xs">
+                <a href={o.googleMapsUrl} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-accent">Get directions →</a>
+              </p>
+            </div>
+          ))}
         </div>
       </div>
       <div className="mx-auto flex max-w-[1200px] items-center justify-center gap-16 border-t border-grey px-5 py-6">
