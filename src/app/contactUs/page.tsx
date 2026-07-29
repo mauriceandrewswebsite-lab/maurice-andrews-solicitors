@@ -7,6 +7,7 @@ import GoogleReviews from "@/components/GoogleReviews";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import ContactForm from "./ContactForm";
+import { offices } from "@/data/offices";
 
 export const metadata: Metadata = { title: "Contact Us | Maurice Andrews Solicitors", description: "Contact Maurice Andrews Solicitors for immediate criminal defence help. 24/7 emergency helpline at 0121 554 4900. WhatsApp, email, or call us now." };
 
@@ -183,39 +184,39 @@ export default function ContactUsPage() {
                   <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M1 5h8M5 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" fill="none"/></svg>
                 </p>
               </a>
-              {/* Landline */}
+              {/* Landline (main Birmingham number) */}
               <a
-                href="tel:0121 554 4900"
+                href={offices.find((o) => o.isMain)!.phoneTel}
                 className="group flex h-full flex-col border-2 border-[#E5E6EB] p-4 transition duration-300 ease-in-out hover:shadow-lg xl:p-8"
               >
                 <div className="mb-4 inline-flex h-[57px] w-[57px] items-center justify-center bg-[#E8F1FE]">
                   <svg width="33" height="33" viewBox="0 0 33 33" fill="none"><path d="M30.25 23.375v4.125a2.75 2.75 0 01-3 2.75A27.22 27.22 0 011.375 5.563a2.75 2.75 0 012.736-3h4.125a2.75 2.75 0 012.75 2.365c.174 1.319.497 2.604.96 3.835a2.75 2.75 0 01-.62 2.9l-1.746 1.746a22 22 0 008.25 8.25l1.746-1.746a2.75 2.75 0 012.9-.62c1.231.463 2.516.786 3.835.96a2.75 2.75 0 012.379 2.764z" stroke="#1C2946" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </div>
-                <h3 className="mb-2 text-lg font-semibold text-primary md:text-[25px]">Landline</h3>
-                <p className="mb-4 text-[12px] text-[#646F85]">0121 554 4900</p>
+                <h3 className="mb-2 text-lg font-semibold text-primary md:text-[25px]">Landline (Birmingham)</h3>
+                <p className="mb-4 text-[12px] text-[#646F85]">{offices.find((o) => o.isMain)!.phoneDisplay}</p>
                 <p className="mt-auto flex items-center gap-2 text-[15px] text-[#3C78F4]">
                   Call us
                   <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M1 5h8M5 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" fill="none"/></svg>
                 </p>
               </a>
-              {/* Mobile */}
+              {/* Wolverhampton line */}
               <a
-                href="tel:0121 554 4900"
+                href={offices.find((o) => !o.isMain)!.phoneTel}
                 className="group flex h-full flex-col border-2 border-[#E5E6EB] p-4 transition duration-300 ease-in-out hover:shadow-lg xl:p-8"
               >
                 <div className="mb-4 inline-flex h-[57px] w-[57px] items-center justify-center bg-[#E8F1FE]">
-                  <svg width="33" height="33" viewBox="0 0 33 33" fill="none"><rect x="7.5625" y="1.375" width="17.875" height="30.25" rx="3" stroke="#1C2946" strokeWidth="2"/><line x1="14.4375" y1="26.125" x2="18.5625" y2="26.125" stroke="#1C2946" strokeWidth="2" strokeLinecap="round"/></svg>
+                  <svg width="33" height="33" viewBox="0 0 33 33" fill="none"><path d="M30.25 23.375v4.125a2.75 2.75 0 01-3 2.75A27.22 27.22 0 011.375 5.563a2.75 2.75 0 012.736-3h4.125a2.75 2.75 0 012.75 2.365c.174 1.319.497 2.604.96 3.835a2.75 2.75 0 01-.62 2.9l-1.746 1.746a22 22 0 008.25 8.25l1.746-1.746a2.75 2.75 0 012.9-.62c1.231.463 2.516.786 3.835.96a2.75 2.75 0 012.379 2.764z" stroke="#1C2946" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </div>
-                <h3 className="mb-2 text-lg font-semibold text-primary md:text-[25px]">Mobile</h3>
-                <p className="mb-4 text-[12px] text-[#646F85]">0121 554 4900</p>
+                <h3 className="mb-2 text-lg font-semibold text-primary md:text-[25px]">Landline (Wolverhampton)</h3>
+                <p className="mb-4 text-[12px] text-[#646F85]">{offices.find((o) => !o.isMain)!.phoneDisplay}</p>
                 <p className="mt-auto flex items-center gap-2 text-[15px] text-[#3C78F4]">
                   Call us
                   <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M1 5h8M5 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" fill="none"/></svg>
                 </p>
               </a>
-              {/* Address */}
+              {/* Address (Birmingham) */}
               <a
-                href="https://maps.google.com/?q=180-182+Soho+Hill+Birmingham+B19+1AG"
+                href={offices.find((o) => o.isMain)!.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex h-full flex-col border-2 border-[#E5E6EB] p-4 transition duration-300 ease-in-out hover:shadow-lg xl:p-8"
@@ -223,13 +224,37 @@ export default function ContactUsPage() {
                 <div className="mb-4 inline-flex h-[57px] w-[57px] items-center justify-center bg-[#E8F1FE]">
                   <svg width="33" height="33" viewBox="0 0 33 33" fill="none"><path d="M16.5 17.875a4.125 4.125 0 100-8.25 4.125 4.125 0 000 8.25z" stroke="#1C2946" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M26.125 13.75c0 9.625-9.625 16.5-9.625 16.5S6.875 23.375 6.875 13.75a9.625 9.625 0 0119.25 0z" stroke="#1C2946" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </div>
-                <h3 className="mb-2 text-lg font-semibold text-primary md:text-[25px]">Address</h3>
-                <p className="mb-4 text-[12px] leading-relaxed text-[#646F85]">180-182 Soho Hill, Birmingham B19 1AG</p>
+                <h3 className="mb-2 text-lg font-semibold text-primary md:text-[25px]">Visit us — Birmingham</h3>
+                <p className="mb-4 text-[12px] leading-relaxed text-[#646F85]">{offices.find((o) => o.isMain)!.fullAddressOneLine}</p>
                 <p className="mt-auto flex items-center gap-2 text-[15px] text-[#3C78F4]">
                   Get directions
                   <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M1 5h8M5 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" fill="none"/></svg>
                 </p>
               </a>
+            </div>
+
+            {/* Second row — Wolverhampton address card */}
+            <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
+              <a
+                href={offices.find((o) => !o.isMain)!.googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex h-full flex-col border-2 border-[#E5E6EB] p-4 transition duration-300 ease-in-out hover:shadow-lg xl:p-8"
+              >
+                <div className="mb-4 inline-flex h-[57px] w-[57px] items-center justify-center bg-[#E8F1FE]">
+                  <svg width="33" height="33" viewBox="0 0 33 33" fill="none"><path d="M16.5 17.875a4.125 4.125 0 100-8.25 4.125 4.125 0 000 8.25z" stroke="#1C2946" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M26.125 13.75c0 9.625-9.625 16.5-9.625 16.5S6.875 23.375 6.875 13.75a9.625 9.625 0 0119.25 0z" stroke="#1C2946" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                </div>
+                <h3 className="mb-2 text-lg font-semibold text-primary md:text-[25px]">Visit us — Wolverhampton</h3>
+                <p className="mb-4 text-[12px] leading-relaxed text-[#646F85]">{offices.find((o) => !o.isMain)!.fullAddressOneLine}</p>
+                <p className="mt-auto flex items-center gap-2 text-[15px] text-[#3C78F4]">
+                  Get directions
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M1 5h8M5 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" fill="none"/></svg>
+                </p>
+              </a>
+              {/* Placeholder slots to keep grid balance */}
+              <div className="hidden xl:block" />
+              <div className="hidden xl:block" />
+              <div className="hidden xl:block" />
             </div>
           </div>
         </section>
@@ -247,15 +272,7 @@ export default function ContactUsPage() {
               </Link>
             </div>
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-7">
-              {[
-                { day: "Monday", hours: "9:00 AM – 5:30 PM" },
-                { day: "Tuesday", hours: "9:00 AM – 5:30 PM" },
-                { day: "Wednesday", hours: "9:00 AM – 5:30 PM" },
-                { day: "Thursday", hours: "9:00 AM – 5:30 PM" },
-                { day: "Friday", hours: "9:00 AM – 5:30 PM" },
-                { day: "Saturday", hours: "Closed" },
-                { day: "Sunday", hours: "Closed" },
-              ].map(({ day, hours }) => (
+              {offices[0].hours.map(({ day, hours }) => (
                 <div key={day} className="rounded-lg bg-[#F5F7FA] p-4 text-center">
                   <p className="text-sm font-bold text-primary">{day}</p>
                   <p className="mt-1 text-xs text-[#555]">{hours}</p>
@@ -316,14 +333,30 @@ export default function ContactUsPage() {
           </div>
         </section>
         <section className="map mt-16 mb-0">
-          <iframe
-            src="https://maps.google.com/maps?width=600&height=400&hl=en&q=180%20Soho%20Hill%20Birmingham%20B19%201AG&t=&z=16&ie=UTF8&iwloc=B&output=embed"
-            style={{ width: "100%", height: "465px" }}
-            frameBorder="0"
-            scrolling="no"
-            referrerPolicy="no-referrer-when-downgrade"
-            loading="lazy"
-          ></iframe>
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <div>
+              <h3 className="bg-primary px-4 py-2 text-sm font-bold uppercase text-white">Birmingham (Main Office)</h3>
+              <iframe
+                src={offices.find((o) => o.isMain)!.googleMapsEmbed}
+                style={{ width: "100%", height: "465px" }}
+                frameBorder="0"
+                scrolling="no"
+                referrerPolicy="no-referrer-when-downgrade"
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div>
+              <h3 className="bg-primary px-4 py-2 text-sm font-bold uppercase text-white">Wolverhampton (Branch Office)</h3>
+              <iframe
+                src={offices.find((o) => !o.isMain)!.googleMapsEmbed}
+                style={{ width: "100%", height: "465px" }}
+                frameBorder="0"
+                scrolling="no"
+                referrerPolicy="no-referrer-when-downgrade"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
         </section>
       </main>
       <Footer />

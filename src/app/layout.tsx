@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { offices } from "@/data/offices";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -37,6 +38,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const birmingham = offices.find((o) => o.isMain)!;
+  const wolverhampton = offices.find((o) => !o.isMain)!;
+
   return (
     <html lang="en-GB" className={inter.variable}>
       <head>
@@ -47,16 +51,16 @@ export default function RootLayout({
                 "@context": "https://schema.org",
                 "@type": "LegalService",
                 "name": "Maurice Andrews Solicitors",
-                "description": "Expert criminal defence solicitors in Birmingham. 24/7 emergency helpline. Legal Aid available.",
+                "description": "Expert criminal defence solicitors in Birmingham and Wolverhampton. 24/7 emergency helpline. Legal Aid available.",
                 "url": "https://maurice-andrews-solicitors-bice.vercel.app",
-                "telephone": "+441215544900",
+                "telephone": birmingham.phoneE164,
                 "email": "info@mauriceandrewssolicitors.co.uk",
                 "address": {
                   "@type": "PostalAddress",
-                  "streetAddress": "180-182 Soho Hill",
-                  "addressLocality": "Birmingham",
-                  "postalCode": "B19 1AG",
-                  "addressCountry": "GB"
+                  "streetAddress": birmingham.street,
+                  "addressLocality": birmingham.city,
+                  "postalCode": birmingham.postcode,
+                  "addressCountry": birmingham.country
                 },
                 "openingHoursSpecification": {
                   "@type": "OpeningHoursSpecification",
@@ -64,6 +68,32 @@ export default function RootLayout({
                   "opens": "09:00",
                   "closes": "17:30"
                 },
+                "department": [
+                  {
+                    "@type": "LegalService",
+                    "name": "Maurice Andrews Solicitors — Birmingham (Main Office)",
+                    "telephone": birmingham.phoneE164,
+                    "address": {
+                      "@type": "PostalAddress",
+                      "streetAddress": birmingham.street,
+                      "addressLocality": birmingham.city,
+                      "postalCode": birmingham.postcode,
+                      "addressCountry": birmingham.country
+                    }
+                  },
+                  {
+                    "@type": "LegalService",
+                    "name": "Maurice Andrews Solicitors — Wolverhampton (Branch Office)",
+                    "telephone": wolverhampton.phoneE164,
+                    "address": {
+                      "@type": "PostalAddress",
+                      "streetAddress": wolverhampton.street,
+                      "addressLocality": wolverhampton.city,
+                      "postalCode": wolverhampton.postcode,
+                      "addressCountry": wolverhampton.country
+                    }
+                  }
+                ],
                 "sameAs": [
                   "https://www.facebook.com/mauriceandrewssolicitors",
                   "https://www.instagram.com/mauriceandrewssolicitors/",
