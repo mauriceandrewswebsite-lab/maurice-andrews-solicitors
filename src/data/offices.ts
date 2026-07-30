@@ -75,9 +75,9 @@ export const offices: Office[] = [
       "84 Salop Street",
       "Wolverhampton WV3 0SR",
     ],
-    phoneDisplay: "0121 824 3625",
-    phoneTel: "tel:+441218243625",
-    phoneE164: "+441218243625",
+    phoneDisplay: "01902 965560",
+    phoneTel: "tel:+441902965560",
+    phoneE164: "+441902965560",
     email: "info@mauriceandrewssolicitors.co.uk",
     googleMapsUrl: "https://maps.app.goo.gl/g3Kobzs4nuK48niE6",
     googleMapsEmbed:
