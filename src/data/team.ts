@@ -9,6 +9,14 @@ export type TeamMember = {
 
 export const team: TeamMember[] = [
   {
+    name: "Akhmed Yakoob",
+    title: "DIRECTOR - SOLICITOR",
+    profileTitle: "Director & Solicitor",
+    img: "/assets/akhmed-yakoob.jpg",
+    initials: null,
+    bio: "A pillar of unwavering dedication and unparalleled legal acumen, Mr. Akhmed Yakoob has cemented his position as one of the UK's leading legal minds, especially in complex matters and serious crimes. With an illustrious journey spanning over 15 years, his association with Maurice Andrews Solicitors began in 2014. As he worked under the mentorship of Mr. Andrews, the erstwhile director, Mr. Yakoob honed his expertise, amplifying both his depth of knowledge and commitment to achieving outstanding results for every client. His speciality lies in constructing robust defences and presenting them in the most compelling manner before the courts. When Mr. Andrews opted for a well-deserved retirement in 2016, the mantle naturally passed to Mr. Yakoob, whose exemplary work ethic and consistent success spoke volumes of his capability. Embracing this leadership role, he embarked on a transformative journey for the firm between 2016 and 2018, implementing a comprehensive rebrand while preserving the firm's venerable name as a nod to its esteemed legacy. A visionary, Mr. Yakoob recognised the value of continuous learning and investment in human capital. Under his guidance, the firm fortified its ranks, adding to its cadre of lawyers, trainees, paralegals, and administrative staff, reaching a robust team of over 10 by 2019. The onset of the COVID pandemic in 2019 saw Mr. Yakoob's innovation come to the fore. Not only did he steer the firm with resilience but also ventured into the digital realm, disseminating free legal insights on criminal law and rights during police engagements. This initiative propelled Maurice Andrews Solicitors into the spotlight, garnering a significant online following and turning it into a household name. In the courtroom, Mr. Yakoob is a force to be reckoned with. Known as a fierce, powerful, and unwavering advocate for justice, he's handled numerous high-profile cases, securing the best possible outcomes for his clients. His reputation as an elite litigator and strategist precedes him, making him the go-to solicitor for those facing serious allegations.",
+  },
+  {
     name: "Mariam Khan",
     title: "",
     profileTitle: "Trainee Solicitor",
