@@ -1,6 +1,6 @@
 # Maurice Andrews Solicitors — Website Handover
 
-**Last updated:** 29 July 2026 (post-Wolverhampton deployment)
+**Last updated:** 31 July 2026 (post-homepage hero update)
 **Status:** ✅ LIVE — all production traffic serving the latest build
 
 ---
@@ -8,8 +8,8 @@
 ## Live site
 
 - **Production URL:** https://www.mauriceandrewssolicitors.co.uk
-- **Vercel deployment ID:** `#5666493892` (commit `8be003d`) — superseded by commit `55c3f21` (Akhmed Yakoob update)
-- **Last deploy time:** 2026-07-29 23:27 UTC
+- **Vercel deployment ID:** `#5666493892` (commit `8be003d`) — superseded by commit `055c5e7` (homepage hero + Akhmed on homepage team grid)
+- **Last deploy time:** 2026-07-31 00:50 UTC
 - **Previous deploys (history):** `#5394775661` (e76cc8f — 10 Jul), `#5394748047` (82a52f2 — 10 Jul)
 
 ## GitHub
@@ -31,6 +31,8 @@ The `preview/wolverhampton-office` branch was merged and deleted after the Wolve
 
 ### Recent commits (newest first)
 ```
+055c5e7 Add Akhmed Yakoob to homepage team grid
+210158d Replace homepage hero image with new team photo
 55c3f21 Add Akhmed Yakoob to team page with bio and portrait
 da3852f Update HANDOVER.md — Wolverhampton phone corrected to 01902 965560
 95ab803 Corrected Wolverhampton phone to 01902 965560
