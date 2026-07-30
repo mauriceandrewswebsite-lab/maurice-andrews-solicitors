@@ -64,9 +64,9 @@ File: `source/src/data/offices.ts`
 |---|---|---|
 | Label | Main Office | Branch Office |
 | Address | 180-182 Soho Hill, Handsworth, Birmingham B19 1AG | 3rd & 4th Floors, 84 Salop Street, Wolverhampton WV3 0SR |
-| Phone (display) | 0121 554 4900 | 0121 824 3625 |
-| Phone (tel:) | tel:+441215544900 | tel:+441218243625 |
-| Phone (E.164) | +441215544900 | +441218243625 |
+| Phone (display) | 0121 554 4900 | 01902 965560 |
+| Phone (tel:) | tel:+441215544900 | tel:+441902965560 |
+| Phone (E.164) | +441215544900 | +441902965560 |
 | Email | info@mauriceandrewssolicitors.co.uk | (same) |
 | Google Maps URL | https://maps.google.com/?q=180-182+Soho+Hill+Birmingham+B19+1AG | https://maps.app.goo.gl/g3Kobzs4nuK48niE6 |
 | Place ID | — | 0x48709b510145d57d:0xe40440a9eeddcf31 |
