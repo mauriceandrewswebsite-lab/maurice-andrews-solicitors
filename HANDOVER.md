@@ -3,6 +3,14 @@
 **Last updated:** 31 July 2026 (post-homepage hero update)
 **Status:** ✅ LIVE — all production traffic serving the latest build
 
+## Recent client-requested updates
+
+| Date | Request | Action | Commit |
+|---|---|---|---|
+| 31 Jul 2026 | Replace homepage hero image with new team photo | Updated `public/assets/front-page-banner.jpg`; old banner kept as `front-page-banner-OLD.jpg` | `210158d` |
+| 31 Jul 2026 | Add Akhmed Yakoob to team page like the rest of the team cards | Added entry to `src/data/team.ts` with recovered bio and portrait `/assets/akhmed-yakoob.jpg` | `55c3f21` |
+| 31 Jul 2026 | Add Akhmed Yakoob to homepage team grid | Updated `src/app/page.tsx` team array so the homepage matches the team page | `055c5e7` |
+
 ---
 
 ## Live site
