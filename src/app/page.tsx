@@ -47,7 +47,7 @@ export default function HomePage() {
           className="relative w-full bg-cover bg-no-repeat"
           style={{
             backgroundImage: "url('/assets/front-page-banner.jpg')",
-            backgroundPosition: "center top",
+            backgroundPosition: "center 20%",
             height: 'clamp(360px, 50vw, 700px)',
             minHeight: '280px',
           }}
