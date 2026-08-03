@@ -44,9 +44,10 @@ export default function HomePage() {
       <main>
         {/* HERO — photo with text baked in, gradient overlay for readability */}
         <section
-          className="relative w-full bg-cover bg-center bg-no-repeat"
+          className="relative w-full bg-cover bg-no-repeat"
           style={{
             backgroundImage: "url('/assets/front-page-banner.jpg')",
+            backgroundPosition: "center top",
             height: 'clamp(360px, 50vw, 700px)',
             minHeight: '280px',
           }}
