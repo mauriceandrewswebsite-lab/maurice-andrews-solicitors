@@ -7,7 +7,8 @@
 
 | Date | Request | Action | Commit |
 |---|---|---|---|
-| 31 Jul 2026 | Hero image text hidden at top | Changed hero CSS `background-position` from `center` to `center top` so the baked-in slogan "THERE IS A DEFENCE FOR EVERY OFFENCE" is visible | `fbee7af` |
+| 31 Jul 2026 | Hero slogan text still hidden at top | Added `pt-16 md:pt-20` top padding to hero section and shifted background to `center 25%` so slogan is fully visible | `3d5a84a` |
+| 31 Jul 2026 | Hero image text hidden at top | Changed hero CSS `background-position` from `center` to `center top` so baked-in slogan text is visible | `fbee7af` |
 | 31 Jul 2026 | Replace homepage hero image with new team photo | Updated `public/assets/front-page-banner.jpg`; old banner kept as `front-page-banner-OLD.jpg` | `210158d` |
 | 31 Jul 2026 | Replace homepage hero image again with updated team photo | Overwrote `public/assets/front-page-banner.jpg` with the latest client-provided image | `784530b` |
 | 31 Jul 2026 | Add Akhmed Yakoob to team page like the rest of the team cards | Added entry to `src/data/team.ts` with recovered bio and portrait `/assets/akhmed-yakoob.jpg` | `55c3f21` |
