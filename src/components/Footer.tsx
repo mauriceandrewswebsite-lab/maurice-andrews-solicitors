@@ -62,14 +62,9 @@ export default function Footer() {
           ))}
         </div>
       </div>
-      <div className="mx-auto flex max-w-[1200px] items-center justify-center border-t border-grey px-5 py-6">
-        <a href="https://www.cyberessentials.ncsc.gov.uk/" target="_blank" rel="noopener noreferrer" aria-label="Cyber Essentials Certified 2026">
-          <img src="/assets/cyber-essentials-badge.png" alt="Cyber Essentials Certified 2026" className="h-28 w-auto md:h-32" />
-        </a>
-      </div>
-      <div className="mx-auto grid max-w-[1200px] grid-cols-2 place-items-center gap-x-10 gap-y-6 border-t border-grey px-5 py-6 sm:flex sm:items-center sm:justify-center sm:gap-10">
+      <div className="mx-auto grid max-w-[1200px] grid-cols-2 place-items-center gap-x-10 gap-y-6 border-t border-grey px-5 py-6 sm:flex sm:items-center sm:justify-center sm:gap-8">
         {/* Start of SRA Digital Badge code (Full Colour) */}
-        <div style={{ maxWidth: 275, maxHeight: 163 }}>
+        <div style={{ width: 110, maxWidth: 275, maxHeight: 163 }}>
           <div style={{ position: 'relative', paddingBottom: '59.1%', height: 'auto', overflow: 'hidden' }}>
             <iframe
               frameBorder="0"
@@ -82,6 +77,9 @@ export default function Footer() {
           </div>
         </div>
         {/* End of SRA Digital Badge code */}
+        <a href="https://www.cyberessentials.ncsc.gov.uk/" target="_blank" rel="noopener noreferrer" aria-label="Cyber Essentials Certified 2026">
+          <img src="/assets/cyber-essentials-badge.png" alt="Cyber Essentials Certified 2026" className="h-16 w-auto" />
+        </a>
         <a href="https://www.lawsociety.org.uk/topics/firm-accreditations/lexcel" target="_blank" rel="noopener noreferrer" aria-label="Lexcel Accredited">
           <img src="/assets/lexcel-badge.png" alt="Lexcel Accredited" className="h-16 w-auto" />
         </a>
