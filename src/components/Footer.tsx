@@ -68,9 +68,20 @@ export default function Footer() {
         </a>
       </div>
       <div className="mx-auto grid max-w-[1200px] grid-cols-2 place-items-center gap-x-10 gap-y-6 border-t border-grey px-5 py-6 sm:flex sm:items-center sm:justify-center sm:gap-10">
-        <a href="https://www.sra.org.uk/consumers/register/organisation/?sraNumber=637667&prevSearchText=Maurice%20Andrews%20solictors&prevSearchFilter=Firm" target="_blank" rel="noopener noreferrer" aria-label="SRA Authorised & Regulated">
-          <img src="/assets/sra-regulated.png" alt="SRA Regulated" className="h-16 w-auto" />
-        </a>
+        {/* Start of SRA Digital Badge code (Full Colour) */}
+        <div style={{ maxWidth: 275, maxHeight: 163 }}>
+          <div style={{ position: 'relative', paddingBottom: '59.1%', height: 'auto', overflow: 'hidden' }}>
+            <iframe
+              frameBorder="0"
+              scrolling="no"
+              allowTransparency
+              src="https://cdn.yoshki.com/iframe/55845r.html"
+              title="SRA Digital Badge"
+              style={{ border: 0, margin: 0, padding: 0, backgroundColor: 'transparent', top: 0, left: 0, width: '100%', height: '100%', position: 'absolute' }}
+            />
+          </div>
+        </div>
+        {/* End of SRA Digital Badge code */}
         <a href="https://www.lawsociety.org.uk/topics/firm-accreditations/lexcel" target="_blank" rel="noopener noreferrer" aria-label="Lexcel Accredited">
           <img src="/assets/lexcel-badge.png" alt="Lexcel Accredited" className="h-16 w-auto" />
         </a>
